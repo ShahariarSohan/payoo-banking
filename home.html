@@ -3,11 +3,153 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- daisy UI and tailwind CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/0a7da69a94.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Home</title>
   </head>
   <body>
     <header></header>
-    <main><h1>this is payoo home</h1></main>
+    <main class="flex justify-center">
+      <div class="mockup-phone block bg-white mx-h-vh">
+        <div class="mockup-phone-camera"></div>
+
+        <!-- nav start -->
+        <nav class="flex justify-between items-center">
+          <div class="stats">
+            <div>
+              <img src="assets/Group.png" alt="" />
+            </div>
+            <div class="stat">
+              <div class="stat-value">89,400</div>
+              <p class="stat-desc">Available Balance</p>
+            </div>
+          </div>
+          <div class="flex justify-center items-center gap-1">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <p class="font-bold">Logout</p>
+          </div>
+        </nav>
+        <!-- nav end -->
+        <!-- title -->
+        <div class="w-1/2">
+          <h2 class="text-3xl font-bold">Welcome To Payoo</h2>
+          <p class="">
+            Enjoy easy and convenient financial services with us. Cashout charge
+            is low and
+          </p>
+        </div>
+        <!-- features section -->
+        <div class="grid grid-cols-2 gap-5">
+          <!-- card1 -->
+          <div
+            class="text-center flex flex-col justify-center bg-slate-100 p-5 rounded-md"
+          >
+            <div>
+              <img class="mx-auto" src="assets/wallet1.png" alt="" />
+            </div>
+            <p>Add Money</p>
+          </div>
+          <!-- card2 -->
+          <div
+            class="text-center flex flex-col justify-center bg-slate-100 p-5 rounded-md"
+          >
+            <div>
+              <img class="mx-auto" src="assets/send1.png" alt="" />
+            </div>
+            <p>Cash Out</p>
+          </div>
+          <!-- card3 -->
+          <div
+            class="text-center flex flex-col justify-center bg-slate-100 p-5 rounded-md"
+          >
+            <div>
+              <img class="mx-auto" src="assets/money1.png" alt="" />
+            </div>
+            <p>Transfer Money</p>
+          </div>
+          <!-- card4 -->
+          <div
+            class="text-center flex flex-col justify-center bg-slate-100 p-5 rounded-md"
+          >
+            <div>
+              <img class="mx-auto" src="assets/bonus1.png" alt="" />
+            </div>
+            <p>Get Bonus</p>
+          </div>
+          <!-- card5 -->
+          <div
+            class="text-center flex flex-col justify-center bg-slate-100 p-5 rounded-md"
+          >
+            <div>
+              <img class="mx-auto" src="assets/transaction1.png" alt="" />
+            </div>
+            <p>Transaction</p>
+          </div>
+          <!-- card6 -->
+          <div
+            class="text-center flex flex-col justify-center bg-slate-100 p-5 rounded-md"
+          >
+            <div>
+              <img class="mx-auto" src="assets/purse1.png" alt="" />
+            </div>
+            <p>Pay Bill</p>
+          </div>
+        </div>
+        <div class="place-content-center">
+          <!-- card start -->
+          <div class="card bg-base-100 w-full shrink-0 shadow-2xl">
+            <div class="card-body">
+              <fieldset class="fieldset">
+                <label class="fieldset-label font-semibold text-black"
+                  >Account Number</label
+                >
+                <input
+                  id="acoount-number"
+                  type="text"
+                  class="input"
+                  placeholder="Add amount"
+                />
+                <label class="fieldset-label font-semibold text-black"
+                  >Add Amount</label
+                >
+                <input
+                  id="amount-number"
+                  type="text"
+                  class="input"
+                  placeholder="Add amount"
+                />
+                <label class="fieldset-label font-semibold text-black"
+                  >4 Digit Pin</label
+                >
+                <input
+                  id="pin-number"
+                  type="password"
+                  class="input"
+                  placeholder="4 Digit pin"
+                />
+                <button
+                  id="add-button"
+                  class="btn btn-neutral bg-blue-700 mt-4"
+                >
+                  Add Money
+                </button>
+              </fieldset>
+            </div>
+          </div>
+          <!-- card end -->
+        </div>
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>

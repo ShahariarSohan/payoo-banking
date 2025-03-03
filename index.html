@@ -13,8 +13,44 @@
     <title>Payoo Banking</title>
   </head>
   <body>
-    <header><h1>Hello</h1></header>
-    <main></main>
+    <header></header>
+    <main class="flex justify-center">
+      <div class="mockup-phone bg-white">
+        <div class="mockup-phone-camera"></div>
+        <div class="mockup-phone-display grid place-content-center">
+          <div class="bg-[url('/assets/bg.png')] bg-cover">
+            <div class="flex justify-center">
+              <img src="assets/Group.png" alt="" />
+            </div>
+          </div>
+          <!-- card start -->
+          <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <div class="card-body">
+              <fieldset class="fieldset">
+                <label class="fieldset-label font-semibold text-black"
+                  >Mobile Number</label
+                >
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="Enter mobile number"
+                />
+                <label class="fieldset-label font-semibold text-black"
+                  >4 Digit Pin</label
+                >
+                <input
+                  type="password"
+                  class="input"
+                  placeholder="4 Digit pin"
+                />
+                <button class="btn btn-neutral bg-blue-700 mt-4">Login</button>
+              </fieldset>
+            </div>
+          </div>
+          <!-- card end -->
+        </div>
+      </div>
+    </main>
     <footer></footer>
 
     <script src="index.js"></script>

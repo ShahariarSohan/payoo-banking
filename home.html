@@ -52,7 +52,8 @@
         <div class="grid grid-cols-2 gap-5">
           <!-- card1 -->
           <div
-            class="text-center flex flex-col justify-center bg-slate-100 p-5 rounded-md"
+            id="add-money"
+            class="text-center flex flex-col justify-center hover:bg-slate-100 p-5 rounded-md"
           >
             <div>
               <img class="mx-auto" src="assets/wallet1.png" alt="" />
@@ -61,7 +62,8 @@
           </div>
           <!-- card2 -->
           <div
-            class="text-center flex flex-col justify-center bg-slate-100 p-5 rounded-md"
+            id="cash-out"
+            class="text-center flex flex-col justify-center hover:bg-slate-100 p-5 rounded-md"
           >
             <div>
               <img class="mx-auto" src="assets/send1.png" alt="" />
@@ -70,7 +72,8 @@
           </div>
           <!-- card3 -->
           <div
-            class="text-center flex flex-col justify-center bg-slate-100 p-5 rounded-md"
+            id="transfer-money"
+            class="text-center flex flex-col justify-center hover:bg-slate-100 p-5 rounded-md"
           >
             <div>
               <img class="mx-auto" src="assets/money1.png" alt="" />
@@ -79,7 +82,8 @@
           </div>
           <!-- card4 -->
           <div
-            class="text-center flex flex-col justify-center bg-slate-100 p-5 rounded-md"
+            if="get-bonus"
+            class="text-center flex flex-col justify-center hover:bg-slate-100 p-5 rounded-md"
           >
             <div>
               <img class="mx-auto" src="assets/bonus1.png" alt="" />
@@ -88,7 +92,8 @@
           </div>
           <!-- card5 -->
           <div
-            class="text-center flex flex-col justify-center bg-slate-100 p-5 rounded-md"
+            id="transaction"
+            class="text-center flex flex-col justify-center hover:bg-slate-100 p-5 rounded-md"
           >
             <div>
               <img class="mx-auto" src="assets/transaction1.png" alt="" />
@@ -97,7 +102,8 @@
           </div>
           <!-- card6 -->
           <div
-            class="text-center flex flex-col justify-center bg-slate-100 p-5 rounded-md"
+            if="pay-bill"
+            class="text-center flex flex-col justify-center hover:bg-slate-100 p-5 rounded-md"
           >
             <div>
               <img class="mx-auto" src="assets/purse1.png" alt="" />
@@ -106,6 +112,7 @@
           </div>
         </div>
         <div class="place-content-center">
+          <!-- add money  start -->
           <!-- card start -->
           <div class="card bg-base-100 w-full shrink-0 shadow-2xl">
             <div class="card-body">
@@ -117,13 +124,13 @@
                   id="acoount-number"
                   type="text"
                   class="input"
-                  placeholder="Add amount"
+                  placeholder="Give account number"
                 />
                 <label class="fieldset-label font-semibold text-black"
                   >Add Amount</label
                 >
                 <input
-                  id="amount-number"
+                  id="input-amount"
                   type="text"
                   class="input"
                   placeholder="Add amount"
@@ -147,9 +154,12 @@
             </div>
           </div>
           <!-- card end -->
+          <!-- add-money end -->
         </div>
       </div>
     </main>
     <footer></footer>
+
+    <script src="/Js/addMoney.js"></script>
   </body>
 </html>

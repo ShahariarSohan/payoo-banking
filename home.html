@@ -111,10 +111,13 @@
             <p>Pay Bill</p>
           </div>
         </div>
+        <!-- add money form start -->
         <div class="place-content-center">
-          <!-- add money  start -->
           <!-- card start -->
-          <div class="card bg-base-100 w-full shrink-0 shadow-2xl">
+          <div
+            id="add-money-form"
+            class="hidden card bg-base-100 w-full shrink-0 shadow-2xl"
+          >
             <div class="card-body">
               <fieldset class="fieldset">
                 <label class="fieldset-label font-semibold text-black"
@@ -154,12 +157,61 @@
             </div>
           </div>
           <!-- card end -->
-          <!-- add-money end -->
         </div>
+        <!-- add money form end -->
+        <!-- cash out form start -->
+        <div class="place-content-center">
+          <!-- card start -->
+          <div
+            id="cash-out-form"
+            class="hidden card bg-base-100 w-full shrink-0 shadow-2xl"
+          >
+            <div class="card-body">
+              <fieldset class="fieldset">
+                <label class="fieldset-label font-semibold text-black"
+                  >Account Number</label
+                >
+                <input
+                  id="account-number"
+                  type="text"
+                  class="input"
+                  placeholder="Give account number"
+                />
+                <label class="fieldset-label font-semibold text-black"
+                  >4 Digit Pin</label
+                >
+                <input
+                  id="pin-number"
+                  type="password"
+                  class="input"
+                  placeholder="4 Digit pin"
+                />
+                <label class="fieldset-label font-semibold text-black"
+                  >Cash Out Amount</label
+                >
+                <input
+                  id="amount"
+                  type="text"
+                  class="input"
+                  placeholder="Amount"
+                />
+                <button
+                  id="cash-out-button"
+                  class="btn btn-neutral bg-blue-700 mt-4"
+                >
+                  Cash Out
+                </button>
+              </fieldset>
+            </div>
+          </div>
+          <!-- card end -->
+        </div>
+        <!-- cash out form end -->
       </div>
     </main>
     <footer></footer>
     <script src="/Js/utilities.js"></script>
     <script src="/Js/addMoney.js"></script>
+    <script src="/Js/cashOut.js"></script>
   </body>
 </html>

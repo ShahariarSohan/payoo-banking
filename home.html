@@ -30,7 +30,7 @@
               <img src="assets/Group.png" alt="" />
             </div>
             <div class="stat">
-              <div class="stat-value">89,400</div>
+              <div id="balance" class="stat-value">89400</div>
               <p class="stat-desc">Available Balance</p>
             </div>
           </div>
@@ -121,19 +121,10 @@
                   >Account Number</label
                 >
                 <input
-                  id="acoount-number"
+                  id="account-number"
                   type="text"
                   class="input"
                   placeholder="Give account number"
-                />
-                <label class="fieldset-label font-semibold text-black"
-                  >Add Amount</label
-                >
-                <input
-                  id="input-amount"
-                  type="text"
-                  class="input"
-                  placeholder="Add amount"
                 />
                 <label class="fieldset-label font-semibold text-black"
                   >4 Digit Pin</label
@@ -144,8 +135,17 @@
                   class="input"
                   placeholder="4 Digit pin"
                 />
+                <label class="fieldset-label font-semibold text-black"
+                  >Add Amount</label
+                >
+                <input
+                  id="amount"
+                  type="text"
+                  class="input"
+                  placeholder="Add amount"
+                />
                 <button
-                  id="add-button"
+                  id="add-money-button"
                   class="btn btn-neutral bg-blue-700 mt-4"
                 >
                   Add Money
@@ -159,7 +159,7 @@
       </div>
     </main>
     <footer></footer>
-
+    <script src="/Js/utilities.js"></script>
     <script src="/Js/addMoney.js"></script>
   </body>
 </html>

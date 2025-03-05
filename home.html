@@ -20,7 +20,7 @@
   <body>
     <header></header>
     <main id="main-container" class="flex justify-center">
-      <div class="mockup-phone block bg-white mx-h-vh">
+      <div class="mockup-phone block bg-white">
         <div class="mockup-phone-camera"></div>
 
         <!-- nav start -->
@@ -237,7 +237,7 @@
           <!-- card end -->
         </div>
         <!-- bonus form end -->
-        <!-- transaction details container -->
+        <!-- transaction details container start-->
         <div class="place-content-center">
           <div
             id="transaction-container"
@@ -245,10 +245,20 @@
           >
             <div class="card-body">
               <h1 class="text-3xl font-extrabold">Transaction History</h1>
-              <h3 class="text-xl">No transaction history yet</h3>
+              <div id="transaction-history"></div>
+              <div>
+                <button
+                  id="delete-button"
+                  class="btn btn-neutral bg-blue-700 mt-4"
+                >
+                  delete
+                </button>
+              </div>
+              <!-- <h3 id="no-history">No transaction history yet</h3> -->
             </div>
           </div>
         </div>
+        <!-- transaction details container end-->
       </div>
     </main>
     <footer></footer>

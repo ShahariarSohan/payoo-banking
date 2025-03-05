@@ -19,7 +19,7 @@
   </head>
   <body>
     <header></header>
-    <main class="flex justify-center">
+    <main id="main-container" class="flex justify-center">
       <div class="mockup-phone block bg-white mx-h-vh">
         <div class="mockup-phone-camera"></div>
 
@@ -116,7 +116,7 @@
           <!-- card start -->
           <div
             id="add-money-form"
-            class="hidden card bg-base-100 w-full shrink-0 shadow-2xl"
+            class="card bg-base-100 w-full shrink-0 shadow-2xl"
           >
             <div class="card-body">
               <fieldset class="fieldset">
@@ -124,7 +124,7 @@
                   >Account Number</label
                 >
                 <input
-                  id="account-number"
+                  id="add-money-account-number"
                   type="text"
                   class="input"
                   placeholder="Give account number"
@@ -133,7 +133,7 @@
                   >4 Digit Pin</label
                 >
                 <input
-                  id="pin-number"
+                  id="add-money-pin-number"
                   type="password"
                   class="input"
                   placeholder="4 Digit pin"
@@ -142,7 +142,7 @@
                   >Add Amount</label
                 >
                 <input
-                  id="amount"
+                  id="add-money-amount"
                   type="text"
                   class="input"
                   placeholder="Add amount"
@@ -172,7 +172,7 @@
                   >Account Number</label
                 >
                 <input
-                  id="account-number"
+                  id="cash-out-account-number"
                   type="text"
                   class="input"
                   placeholder="Give account number"
@@ -181,7 +181,7 @@
                   >4 Digit Pin</label
                 >
                 <input
-                  id="pin-number"
+                  id="cash-out-pin-number"
                   type="password"
                   class="input"
                   placeholder="4 Digit pin"
@@ -190,7 +190,7 @@
                   >Cash Out Amount</label
                 >
                 <input
-                  id="amount"
+                  id="cash-out-amount"
                   type="text"
                   class="input"
                   placeholder="Amount"
@@ -207,11 +207,42 @@
           <!-- card end -->
         </div>
         <!-- cash out form end -->
+        <!-- bonus form start -->
+        <div class="place-content-center">
+          <!-- card start -->
+          <div
+            id="get-bonus-form"
+            class="hidden card bg-base-100 w-full shrink-0 shadow-2xl"
+          >
+            <div class="card-body">
+              <fieldset class="fieldset">
+                <label class="fieldset-label font-semibold text-black"
+                  >Coupon Number</label
+                >
+                <input
+                  id="coupon-number"
+                  type="text"
+                  class="input"
+                  placeholder="Give coupon code"
+                />
+                <button
+                  id="get-bonus-button"
+                  class="btn btn-neutral bg-blue-700 mt-4"
+                >
+                  Get Bonus
+                </button>
+              </fieldset>
+            </div>
+          </div>
+          <!-- card end -->
+        </div>
+        <!-- bonus form end -->
       </div>
     </main>
     <footer></footer>
     <script src="/Js/utilities.js"></script>
     <script src="/Js/addMoney.js"></script>
     <script src="/Js/cashOut.js"></script>
+    <script src="Js/getBonus.js"></script>
   </body>
 </html>

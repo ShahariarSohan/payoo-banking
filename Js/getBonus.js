@@ -11,6 +11,7 @@ document.getElementById("get-bonus-button").addEventListener('click', function (
         const bonus = balance * 0.02;
         const newBalance = balance + bonus;
         document.getElementById("balance").innerText = newBalance;
+        return alert(`You have got ${bonus} tk bonus`)
     }
     else {
         return alert("Give valid coupon code")

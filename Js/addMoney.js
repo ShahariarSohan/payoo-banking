@@ -12,7 +12,6 @@ document.getElementById('add-money-button').addEventListener('click', function (
         const balance = getBalance("balance")
         const newBalance = balance + amount;
         document.getElementById("balance").innerText = newBalance;
-        return modal();
     }
     else {
         return alert("Give the valid Account Number or Pin or give valid amount")
